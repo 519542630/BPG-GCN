@@ -415,7 +415,6 @@ class Processor():
             timer['dataloader'] += self.split_time()
 
             # forward
-            keep_prob = 0.9
             output = self.model(data, keep_prob)
             loss = self.loss(output, label)
             #loss_mse = F.mse_loss(x0, x1)
